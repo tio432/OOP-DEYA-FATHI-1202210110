@@ -9,8 +9,8 @@ public class MainApp {
         Laptop laptop = new Laptop("WD", 256, 5.72F, false);
         laptop.informasi();
         laptop.bukaGame("Minecraft");
-        laptop.kirimEmail("rasal@gmail.com");
-        laptop.kirimEmail("shio@yahoo.com", "kenneth123@gmail.com");
+        laptop.kirimEmail("tio@gmail.com");
+        laptop.kirimEmail("tilay@yahoo.com", "wakwaw123@gmail.com");
         System.out.println("");
         Handphone hp = new Handphone("Snapdragon", 4, 4.73F, true);
         hp.informasi();
