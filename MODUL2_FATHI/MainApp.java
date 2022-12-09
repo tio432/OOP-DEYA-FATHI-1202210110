@@ -1,21 +1,21 @@
-package MODUL2_FATHI;
-
 public class MainApp {
-    public static void main(String[] args) throws Exception {
-        System.out.println("<<< Device Identifier Catalog >>>");
-        Perangkat unknown = new Perangkat("SATA", 512, 3.38F);
-        unknown.informasi();
-        System.out.println("");
-        Laptop laptop = new Laptop("WD", 256, 5.72F, false);
-        laptop.informasi();
-        laptop.bukaGame("Minecraft");
-        laptop.kirimEmail("tio@gmail.com");
-        laptop.kirimEmail("tilay@yahoo.com", "wakwaw123@gmail.com");
-        System.out.println("");
-        Handphone hp = new Handphone("Snapdragon", 4, 4.73F, true);
-        hp.informasi();
-        hp.telfon(448781345);
-        hp.kirimSMS(448781345);
-        hp.kirimSMS(448781345, 628129387);
+    public static void main(String [] args) {
+        TransportasiAir TransportasiAir = new TransportasiAir(16, 20000);
+        TransportasiAir.informasi();
+
+        System.out.println();
+
+        Sampan Sampan = new Sampan(50, 3000, 40);
+        Sampan.informasi();
+        Sampan.berlayar();
+        Sampan.berlabuh();
+        Sampan.berlabuh(5);
+        System.out.println();
+
+        Kapal kapal = new Kapal(20, 10000, "diesel");
+        kapal.informasi();
+        kapal.berlayar();   
+        kapal.berlayar(70);
+        kapal.berlabuh();
     }
 }
